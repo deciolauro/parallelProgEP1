@@ -99,13 +99,13 @@ A version X.Y.Z-K represents:
 * K -> PRE-RELEASE version id (an small ASCII alphanumerics and hyphen
 [0-9A-Za-z-] with the identifier for the pre-release)
 
-The current build released is 0.0.1
+The current build released is 0.0.2
 
 ## Authors
 
 * **Candy Tenorio Gonzales (CANDY@EMAIL)**
 * **Décio Lauro Soares (deciolauro@gmail.com)**
-* **Fatemeh Masaiyebzadeh (FATEMEH@EMAIL)**
+* **Fatemeh Mosaiyebzadeh (mahshid.msy179@gmail.com)**
 
 See also the list of [contributors](https://github.com/deciolauro/parallelProgEP1/graphs/contributors) who participated in this project.
 
@@ -119,7 +119,7 @@ details.
 
 ## Copyright
 
-Copyright (C) <2017>  Candy Tenorio Gonzales; Décio Lauro Soares; Fatemeh Masaiyebzadeh
+Copyright (C) <2017>  Candy Tenorio Gonzales; Décio Lauro Soares; Fatemeh Mosaiyebzadeh
 
 ## Final explanations
 
