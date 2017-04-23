@@ -103,7 +103,7 @@ The current build released is 0.0.2
 
 ## Authors
 
-* **Candy Tenorio Gonzales (CANDY@EMAIL)**
+* **Candy Tenorio Gonzales (cvtenoriog@gmail.com)**
 * **Décio Lauro Soares (deciolauro@gmail.com)**
 * **Fatemeh Mosaiyebzadeh (mahshid.msy179@gmail.com)**
 
