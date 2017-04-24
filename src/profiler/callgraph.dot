@@ -1,0 +1,9 @@
+digraph "callgraph" {
+  F16bb9f8 [label="_dl_runtime_resolve_avx\n2 611 087 028 728"];
+  F16bc7f8 [label="(below main)\n2 611 087 028 728"];
+  F1792378 [label="main\n2 611 087 028 728"];
+  F17d1ae8 [label="compute_mandelbrot\n2 516 095 118 722"];
+  F16bb9f8 -> F16bc7f8 [weight=3,label="2 611 087 028 728 (2x)"];
+  F16bc7f8 -> F1792378 [weight=3,label="2 611 087 028 728 (2x)"];
+  F1792378 -> F17d1ae8 [weight=3,label="2 516 095 118 722 (2x)"];
+}
