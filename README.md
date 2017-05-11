@@ -7,7 +7,7 @@ performance analysis about parallelism using the mandelbrot set.
 ## Parallel Programming using mandelbrot set
 
 The core idea behind this project is to acquire some knowledge about the
-difference in performance when using three computational methods over 5
+difference in performance when using three computational methods over 4
 specific regions in the mandelbrot set.
 
 In order to make the analysis, we use a sequential program, a parallel
@@ -31,7 +31,17 @@ are:
 ```
 A C compiler (gcc is being used in the given Makefile)
 A profiler tool (we are using perf, a Linux 2.6+ profiler)
-Python 2.7 (with matplotlib, numpy, ...)
+Python 2.7 (with matplotlib, numpy, os, pickle)
+```
+
+### Aditional Prerequisities
+
+Also, in order to better read the profile example presented here, you also must
+have:
+
+```
+Valgrind (with Callgrind and KCachegrind tools)
+GNU-gprof tool
 ```
 
 ### (Pre)Installing
@@ -79,6 +89,11 @@ cd NAME
 Because the logs will be stored in the results folder, you may also need
 permission to create a new folder if needed.
 
+## Documentation
+
+You can find a simple doxygen auto created documentation for part of the
+implementation at [Docs](https://github.com/deciolauro/parallelProgEP1/src/html/index.html)
+
 ## Contributing
 
 Please read [CONTRIBUTING](CONTRIBUTING.md) for details on our code of conduct,
@@ -99,7 +114,7 @@ A version X.Y.Z-K represents:
 * K -> PRE-RELEASE version id (an small ASCII alphanumerics and hyphen
 [0-9A-Za-z-] with the identifier for the pre-release)
 
-The current build released is 1.0.0
+The current build released is 2.0.0
 
 ## Authors
 
