@@ -92,7 +92,7 @@ permission to create a new folder if needed.
 ## Documentation
 
 You can find a simple doxygen auto created documentation for part of the
-implementation at [Docs](https://github.com/deciolauro/parallelProgEP1/src/html/index.html)
+implementation at [Docs](http://htmlpreview.github.io/?https://github.com/deciolauro/parallelProgEP1/blob/master/src/html/index.html)
 
 ## Contributing
 
