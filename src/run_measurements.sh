@@ -11,7 +11,7 @@ MESSAGE="Starting stats with: "
 
 SIZE=$INITIAL_SIZE
 
-NAMES=('mandelbrot_seq' 'mandelbrot_pth' 'mandelbrot_omp')
+NAMES=('mandelbrot_pth' 'mandelbrot_omp' 'mandelbrot_seq')
 
 make
 mkdir results
@@ -29,10 +29,10 @@ for NAME in ${NAMES[@]}; do
 				echo -e "\n$MESSAGE THREADS=$i, MEASUREMENTS=$MEASUREMENTS, IMGSIZE=$SIZE\n" >> seahorse.log 2>&1
 				echo -e "\n$MESSAGE THREADS=$i, MEASUREMENTS=$MEASUREMENTS, IMGSIZE=$SIZE\n" >> elephant.log 2>&1
 				echo -e "\n$MESSAGE THREADS=$i, MEASUREMENTS=$MEASUREMENTS, IMGSIZE=$SIZE\n" >> triple_spiral.log 2>&1
-				perf stat -r $MEASUREMENTS ./$NAME -2.5 1.5 -2.0 2.0 $SIZE $i >> full.log 2>&1
-				perf stat -r $MEASUREMENTS ./$NAME -0.8 -0.7 0.05 0.15 $SIZE $i >> seahorse.log 2>&1
-				perf stat -r $MEASUREMENTS ./$NAME 0.175 0.375 -0.1 0.1 $SIZE $i >> elephant.log 2>&1
-				perf stat -r $MEASUREMENTS ./$NAME -0.188 -0.012 0.554 0.754 $SIZE $i >> triple_spiral.log 2>&1
+				perf stat -r $MEASUREMENTS ./$NAME -2.5 1.5 -2.0 2.0 $SIZE 0 -nt $i >> full.log 2>&1
+				perf stat -r $MEASUREMENTS ./$NAME -0.8 -0.7 0.05 0.15 $SIZE 0 -nt $i >> seahorse.log 2>&1
+				perf stat -r $MEASUREMENTS ./$NAME 0.175 0.375 -0.1 0.1 $SIZE 0 -nt $i >> elephant.log 2>&1
+				perf stat -r $MEASUREMENTS ./$NAME -0.188 -0.012 0.554 0.754 $SIZE 0 -nt $i >> triple_spiral.log 2>&1
 			fi
 		done
 		SIZE=$(($SIZE * 2))
@@ -41,5 +41,4 @@ for NAME in ${NAMES[@]}; do
     SIZE=$INITIAL_SIZE
 
     mv *.log results/$NAME
-    rm output.ppm
 done

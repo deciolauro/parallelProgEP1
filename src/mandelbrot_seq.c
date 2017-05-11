@@ -60,7 +60,7 @@ UC **image_buffer;
 int i_x_max;
 int i_y_max;
 int image_buffer_size;
-int PLOT_IMAGE = 0;  // By default do not plot images
+int PLOT_IMAGE = 1;  // By default do not plot images
 
 /* GLOBAL VARIABLES - END */
 
