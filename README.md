@@ -18,7 +18,7 @@ Also, to standardize the experiment, either our execution as our tests will
 be made by using an Google Compute Engine machine.
 
 Our intention with this work is to infer about the nuances when using those
-methods and parallel programming techniques and compare it with the sequencial
+methods and parallel programming techniques and compare it with the sequential
 program results.
 
 ## Getting Started
@@ -46,7 +46,7 @@ GNU-gprof tool
 
 ### (Pre)Installing
 
-We recommend that you fork this repository by logging into your github account
+We recommend that you fork this repository by logging into your GitHub account
 and clicking on the fork icon on the top right side of the screen, because that
 will make it easy to contribute with the project via pull requests.
 
@@ -114,7 +114,7 @@ A version X.Y.Z-K represents:
 * K -> PRE-RELEASE version id (an small ASCII alphanumerics and hyphen
 [0-9A-Za-z-] with the identifier for the pre-release)
 
-The current build released is 2.0.0
+The current build released is 2.0.1
 
 ## Authors
 
@@ -138,11 +138,11 @@ Copyright (C) <2017>  Candy Tenorio Gonzales; Décio Lauro Soares; Fatemeh Mosai
 
 ## Final explanations
 
-A significative part of the code and great part of the insigths and initial
+A significant part of the code and great part of the insights and initial
 explanations was provided by our TA Pedro Bruel and can be found in his
 repository [Pedro Bruel](https://github.com/phrb/MAC5742-0219-EP1).
 
-Since his repository, by the time we are writting this, lacks by which LICENSE
+Since his repository, by the time we are writing this, lacks by which LICENSE
 his work is distributed, we took the liberty to adjust his code to our standards.
 
 However, you may notice that we left out the Copyright details on this files and
